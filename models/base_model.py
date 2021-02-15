@@ -26,7 +26,7 @@ class BaseModel():
     def save(self):
         """ update the update attrib """
         self.updated_at = datetime.now()
-        storage.save(self)
+        storage.save()
 
     def to_dict(self):
         """ return dict object """
