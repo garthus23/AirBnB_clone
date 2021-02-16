@@ -9,14 +9,16 @@ from models.base_model import BaseModel
 
 class User(BaseModel):
     """ user international class """
+
+    BaseModel.email = ""
+    BaseModel.password = ""
+    BaseModel.first_name = ""
+    BaseModel.last_name = ""
+
     def __init__(self):
         """ init """
         BaseModel.__init__(self)
-        self.email = ""
-        self.password = ""
-        self.first_name = ""
-        self.last_name = ""
-
+    
     def __str__(self):
         """ strrrrrrrrrr """
         return("[User] ({}) {}".format(self.id, self.__dict__))
