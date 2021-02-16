@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-
-""" datetime module """
 from datetime import datetime
-""" uuid generator module """
 import uuid
 from models import storage
 
+
 class BaseModel():
     """  classe Basemodel """
- 
+
     def __init__(self, *args, **kwargs):
         """ init method """
         self.id = str(uuid.uuid4())
@@ -16,11 +14,12 @@ class BaseModel():
         self.updated_at = datetime.now()
         if (kwargs):
             for k in kwargs:
-                if k is not "created_at" and k is not "__class__" :
+                if k is not "created_at" and k is not "__class__":
                     if k is not "updated_at":
                         self.__dict__[k] = kwargs[k]
                 if k is "created_at" or k is "updated_at":
-                    self.__dict__[k] = datetime.strptime(kwargs[k], '%Y-%m-%dT%H:%M:%S.%f')
+                    self.__dict__[k] =\
+                        datetime.strptime(kwargs[k], '%Y-%m-%dT%H:%M:%S.%f')
         storage.new(self)
 
     def save(self):
