@@ -46,6 +46,23 @@ class HBNBCommand(cmd.Cmd):
                 if ok_found == 0:
                     print("** no instance found **")
 
+    def do_all(self,line):
+        """ show must go on """
+        all_objs = storage.all()
+        for obj_id in all_objs.keys():
+            if not line:
+                obj = all_objs[obj_id]
+                print(obj)
+            else:
+                l = line.split()
+                if len(l) == 1:
+                    obj1 = obj_id.split(".")
+                    if obj1[0] == l[0]:
+                        obj = all_objs[obj_id]
+                        print(obj)
+                        
+            
+
     def do_EOF(self, line):
         """Quit shortcut to exit the program\n"""
         return True
