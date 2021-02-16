@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" date module, uuid and models """
 from datetime import datetime
 import uuid
 from models import storage
