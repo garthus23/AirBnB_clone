@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-
-""" datetime module """
-from datetime import datetime
-""" uuid generator module """
+""" uuid generator module and datetime"""
 import uuid
+from datetime import datetime
+
+""""
+    class BaseModel
+"""
+
 
 class BaseModel():
     """  classe Basemodel """
- 
+
     def __init__(self, *args, **kwargs):
         """ init method """
         self.id = str(uuid.uuid4())

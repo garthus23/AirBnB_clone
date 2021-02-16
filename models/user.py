@@ -18,7 +18,7 @@ class User(BaseModel):
     def __init__(self):
         """ init """
         BaseModel.__init__(self)
-    
+
     def __str__(self):
         """ strrrrrrrrrr """
         return("[User] ({}) {}".format(self.id, self.__dict__))
