@@ -1,8 +1,15 @@
 #!/usr/bin/python3
-""" date module, uuid and models """
+
+"""
+    These modules does stuff
+"""
+from models import storage
 from datetime import datetime
 import uuid
-from models import storage
+
+"""
+    This Class is the BaseModel
+"""
 
 
 class BaseModel():
