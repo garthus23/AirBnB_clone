@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-
+""" module cmd """
 import cmd
 
+"""
+    class HBNBCommand
+"""
+
 class HBNBCommand(cmd.Cmd):
+    """ HBNBCommand """
 
     def emptyline(self):
+        """ empty line """
         pass
-
-    def do_create(self, line):
-
 
     def do_EOF(self, line):
         """Quit shortcut to exit the program\n"""
