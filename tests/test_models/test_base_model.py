@@ -30,3 +30,14 @@ class TestClass(unittest.TestCase):
         b1 = BaseModel()
         self.assertTrue(b1.__class__)
 
+    def test_print(self):
+        b1 = BaseModel()
+        self.assertIsNotNone(b1.__str__)
+
+    def test_save(self):
+        b1 = BaseModel()
+        self.assertIsNotNone(b1.save)
+
+    def test_to_dict(self):
+        b1 = BaseModel()
+        self.assertIsNotNone(b1.to_dict)
