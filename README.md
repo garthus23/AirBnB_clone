@@ -12,7 +12,7 @@ it will be the clone of the AirBnB Website !
 
  How to launch it :
  
-  ./console.py
+     ./console.py
   
  How to use it :
  
