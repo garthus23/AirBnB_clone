@@ -8,11 +8,13 @@ class TestClass(unittest.TestCase):
         b1 = BaseModel()
         b1.name = "Holberton"
         self.assertEqual(b1.name, "Holberton")
+        self.assertTrue(b1.name)
 
     def test_an_other_value(self):
         b1 = BaseModel()
         b1.my_number = 23
         self.assertEqual(b1.my_number, 23)
+        self.assertTrue(b1.my_number)
 
     def test_verify_id(self):
         b1 = BaseModel()
