@@ -7,7 +7,7 @@ class TestClass(unittest.TestCase):
     def test_one_instance(self):
         b1 = BaseModel()
         b1.name = "Holberton"
-        self.assertTrue(b1, BaseModel())
+        self.assertIsInstance(b1, BaseModel)
 
     def test_an_other_value(self):
         b1 = BaseModel()
