@@ -2,7 +2,7 @@
 
 it will be the clone of the AirBnB Website !
 
-* The Console :
+** The Console :
 
  -  Put in place a parent class (called BaseModel) to take care of the initialization, serialization and deserialization of your future instances.
  -  Create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file.
