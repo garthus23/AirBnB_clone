@@ -20,5 +20,5 @@ it will be the clone of the AirBnB Website !
   - (hbnb) show BaseModel 1234-1234-1234 : Prints the string representation of an instance based on the class name and id.
   - (hbnb) destroy BaseModel 1234-1234-1234 : Deletes an instance based on the class name and id (in progress).
   - (hbnb) all : Prints all string representation of all instances based or not on the class name.
-  - (hbnb) update \<class name' 'id' 'attribute name' 'attribute value' : Updates an instance based on the class name and id (in progress)
+  - (hbnb) update \<class name\> \<id\> \<attribute name\> \<attribute value\> : Updates an instance based on the class name and id (in progress)
  
