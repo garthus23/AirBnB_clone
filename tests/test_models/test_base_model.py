@@ -13,3 +13,16 @@ class TestClass(unittest.TestCase):
         b1 = BaseModel()
         b1.my_number = 23
         self.assertEqual(b1.my_number, 23)
+
+    def test_verify_id(self):
+        b1 = BaseModel()
+        self.assertTrue(b1.id)
+
+    def test_verify_create_date(self):
+        b1 = BaseModel()
+        self.assertTrue(b1.created_at)
+
+    def test_verify_create_date(self):
+        b1 = BaseModel()
+        self.assertTrue(b1.updated_at)
+
