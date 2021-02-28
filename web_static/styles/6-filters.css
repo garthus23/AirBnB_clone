@@ -6,10 +6,6 @@
     border-radius: 4px;
 }
 
-/*.filters > ul li:hover.popover{
-    display: block;
-}*/
-
 button {
     font-size: 18px;
     color: #FFFFFF;
@@ -57,20 +53,18 @@ popover ul li ul li{
     float: none;
     width: inherit;
 } 
+
 popover ul li ul{
     display: none;
     width: inherit;
+    position: relative;
     background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
+    z-index: 10;
 } 
 popover ul li:hover>ul{
     display: block;
     width: inherit;
-}
-
-
-h1 {
-    font-size: 30px;
 }
 
 h2 {
