@@ -35,48 +35,38 @@ button {
     height: 100%;
     width: 25%;
     display: inline-block;
+    margin-left: -0.4%;
 }
 
-popover{ 
-    background: #333; 
-} 
-popover >ul{ 
-    margin: 0 auto;
-   /* width: 80px; */
+
+popover ul{ 
+   margin: 0;
    width: 100%;
+   padding: 0;
+   margin-top: +4.5%;
 } 
 
 popover ul li{ 
-    display: block; 
-    float: left; 
-    margin-left:-40px;
-    position: relative; 
-} 
-popover ul a{ 
-    display: block; 
-    float: left; 
-    width: 100%; 
-    padding: 10px 20px;
-} 
+    display: block;
+    float: left;
+    width: inherit;
+    padding: 0;
+}
 
-/*popover ul ul a:hover{ 
-    background: #090; 
-} */
-popover ul li ul li{ 
-    float: none; 
+popover ul li ul li{
+    float: none;
+    width: inherit;
 } 
-popover ul li ul{ 
-    display: none; 
-    position: relative; 
-    background-color: red; 
-  /*  top: 42px; */ 
+popover ul li ul{
+    display: none;
+    width: inherit;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
 } 
-popover ul li:hover>ul{ 
-    display: block; 
-} 
-popover ul li a{ 
-    display: block; 
-} 
+popover ul li:hover>ul{
+    display: block;
+    width: inherit;
+}
 
 h2 {
     margin-left: 12%;
