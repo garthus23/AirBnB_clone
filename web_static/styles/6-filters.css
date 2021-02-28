@@ -6,9 +6,9 @@
     border-radius: 4px;
 }
 
-.filters > ul li:hover.popover{
+/*.filters > ul li:hover.popover{
     display: block;
-}
+}*/
 
 button {
     font-size: 18px;
@@ -66,6 +66,11 @@ popover ul li ul{
 popover ul li:hover>ul{
     display: block;
     width: inherit;
+}
+
+
+h1 {
+    font-size: 30px;
 }
 
 h2 {
