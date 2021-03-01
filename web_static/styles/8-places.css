@@ -28,6 +28,59 @@
     padding: 18px 7px 1px 7px;
 }
 
+.information {
+    height: 80px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: center;
+    margin: 12% auto;
+}
+
+.max_guest {
+    display: inline-block;
+    width: 100px;
+    margin: +2% auto;
+    background: url("../images/icon_group.png") no-repeat;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.number_rooms {
+    display: inline-block;
+    width: 100px;
+    margin: +2% auto;
+    background: url("../images/icon_bed.png") no-repeat;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.number_bathrooms {
+    display: inline-block;
+    width: 100px;
+    margin: +2% auto;
+    background: url("../images/icon_bath.png") no-repeat;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.user {
+    height: 40px;
+    margin: -5% auto;
+    text-align: left;
+}
+
+.description {
+    height: 80px;
+    margin: -5% auto;
+    text-align: left;
+}
+
+bold {
+    text-align: left;
+    font-weight:bold;
+}
+
+
 h1 {
     font-size: 30px;
 }
